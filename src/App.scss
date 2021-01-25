@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+$font-stack: sans-serif;
+$background-color: #000;
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background: #0f0c29;
+  color: aliceblue;
+}
