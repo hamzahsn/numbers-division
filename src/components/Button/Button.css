@@ -1,0 +1,10 @@
+.baseButton {
+  font-size: 19px;
+  margin: 15px 10px;
+  width: auto;
+  height: 50px;
+  background: #0d1014;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border: none; }

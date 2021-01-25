@@ -1,0 +1,13 @@
+$form-data-margin: 15px 10px;
+
+.baseButton {
+  font-size: 19px;
+  margin: $form-data-margin;
+  width: auto;
+  height: 50px;
+  background: #0d1014;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+}
