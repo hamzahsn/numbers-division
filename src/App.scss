@@ -3,7 +3,6 @@
 }
 
 $font-stack: sans-serif;
-$background-color: #000;
 
 html,
 body {
@@ -11,6 +10,6 @@ body {
 }
 
 body {
-  background: #0f0c29;
-  color: aliceblue;
+  font-family: $font-stack;
+  color: #0f0c29;
 }
