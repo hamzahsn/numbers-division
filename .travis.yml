@@ -25,4 +25,4 @@ cache:
 script:
   - npm i
   - npm run test
-  - npm run build-client
+  - npm run build:client
