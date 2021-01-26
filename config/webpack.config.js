@@ -121,13 +121,13 @@ module.exports = {
     IS_DEV && new webpack.ProgressPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'React Typescript Giphies',
+      title: 'React Typescript Number division',
       template: paths.src + '/index.html',
       filename: 'index.html',
       inject: 'body'
     }),
     IS_DEV && new BundleAnalyzerPlugin(),
-    IS_DEV &&
+    !IS_DEV &&
       new BrotliPlugin({
         test: /\.(js|css|html|svg)$/,
         threshold: 10240,
