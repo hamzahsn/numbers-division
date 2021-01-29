@@ -53,14 +53,14 @@ export const Form: React.FC = () => {
           },
           pattern: {
             value: /^[0-9]+$/i,
-            message: 'invalid number'
+            message: 'First number is invalid number'
           }
         })}
         onChange={(event: React.ChangeEvent<HTMLInputElement>) => handleInputs(event, 'firstNumber')}
       />
       {errors.firstNumber && (
         <p data-testid="firstNumber-error" className={styles.error}>
-          First number not valid
+          {errors.firstNumber.message}
         </p>
       )}
       <LabelInput
@@ -78,12 +78,12 @@ export const Form: React.FC = () => {
           },
           pattern: {
             value: /^[0-9]+$/i,
-            message: 'invalid number'
+            message: 'Second number is invalid'
           }
         })}
         onChange={(event: React.ChangeEvent<HTMLInputElement>) => handleInputs(event, 'secondNumber')}
       />
-      {errors.secondNumber && <p className={styles.error}>Second number not valid</p>}
+      {errors.secondNumber && <p className={styles.error}>{errors.secondNumber.message}</p>}
       <Button data-testid="submit-button">PROCESS</Button>
     </form>
   )
